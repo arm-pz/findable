@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "findable",
+  "version": "0.1.0",
+  "description": "Sets up discovery for a GitHub repo, agent skill, plugin or MCP server: audit, About text, topics, README opening, project page, and directory plan.",
+  "author": {
+    "name": "arm-pz",
+    "url": "https://github.com/arm-pz"
+  },
+  "homepage": "https://github.com/arm-pz/findable",
+  "repository": "https://github.com/arm-pz/findable",
+  "keywords": ["discoverability", "github", "seo", "agent-skills", "readme"],
+  "skills": "./skills/"
+}
