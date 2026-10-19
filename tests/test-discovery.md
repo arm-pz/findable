@@ -1,6 +1,6 @@
 # Discovery tests
 
-Checks that findable activates for publisher-side requests and stays out of the way of skill-authoring and reverse-search skills. Run with findable installed alongside skill-creator.
+Checks that findable activates for publisher-side requests and stays out of the way of skill-authoring and reverse-search skills. Run with findable installed alongside `draft-skill` and `tune-skill`.
 
 ## Should activate findable
 
@@ -15,8 +15,8 @@ Checks that findable activates for publisher-side requests and stays out of the 
 
 - "Find me a good skill for reviewing resumes." (reverse problem: searching, not publishing)
 - "Which GitHub repos are alternatives to X?" (repo search)
-- "Make my skill trigger more reliably in Claude Code." (skill-creator: tuning a SKILL.md description)
-- "Write the SKILL.md for my new skill." (skill-creator: authoring)
+- "Make my skill trigger more reliably in Claude Code." (tune-skill: tuning a SKILL.md description)
+- "Write the SKILL.md for my new skill." (draft-skill: authoring)
 - "Make this README more readable." (general editing, no discovery goal)
 
 ## Ambiguous: expected routing
@@ -25,4 +25,4 @@ Checks that findable activates for publisher-side requests and stays out of the 
 |---|---|
 | "Publish my skills so installers can find them from my domain." | findable for the listing and project pages, and a pointer to the discovery-index mechanism (`skills-visibility` or the current spec) for the index itself |
 | "Promote my repo on Reddit." | findable's distribution rules: disclose authorship, lead with a real example, no star requests |
-| "Improve my skill's description." | Ask which audience: agent triggering goes to skill-creator; search and directory copy stays in findable |
+| "Improve my skill's description." | Ask which audience: agent triggering goes to tune-skill; search and directory copy stays in findable |

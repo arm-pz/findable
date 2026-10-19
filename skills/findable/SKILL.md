@@ -9,8 +9,9 @@ description: >-
   a re-check. Use whenever the user wants more stars, installs, traffic or
   visibility for a repo, skill or skill page, asks why a similar project shows up
   instead of theirs, or is about to publish a skill, plugin or MCP server. Not for
-  finding repos or skills for a task, which is the reverse problem. Not for tuning
-  a SKILL.md description so an agent triggers it better; use skill-creator for that.
+  finding repos or skills for a task, which is the reverse problem. Not for
+  authoring a new skill (use draft-skill) or tuning a SKILL.md description so an
+  agent triggers it better (use tune-skill).
 ---
 
 # Findable
@@ -28,7 +29,7 @@ Projects get found through what they say about themselves in the places search e
 
 ## Two audiences, two jobs
 
-A skill's `description` frontmatter is read by agents deciding when to load it. Everything this skill produces is read by people, search engines and directories. Keep them separate: this skill does not tune triggering (that is skill-creator's job), but it must not leave the two telling different stories, and in a family of sibling skills it must not give two of them the same trigger language.
+A skill's `description` frontmatter is read by agents deciding when to load it. Everything this skill produces is read by people, search engines and directories. Keep them separate: this skill does not tune triggering (that is `tune-skill`'s job, and `draft-skill` writes a new one), but it must not leave the two telling different stories, and in a family of sibling skills it must not give two of them the same trigger language.
 
 ## Workflow
 
