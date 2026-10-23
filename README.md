@@ -28,7 +28,7 @@ Ask it things like:
 
 ## Not for
 
-Finding repos or skills for a task (the reverse problem), authoring a SKILL.md, or tuning a skill's description so an agent triggers it better. Use `draft-skill` for the first and `tune-skill` for the second; both are arm-pz repos and install the same way as findable. To publish a multi-skill catalog index on your own domain (`/.well-known/agent-skills/index.json`), see Evil Martians' `skills-visibility` skill; findable points to that mechanism rather than duplicating it. findable is not affiliated with it.
+Finding repos or skills for a task (the reverse problem), authoring a SKILL.md, or tuning a skill's description so an agent triggers it better. Use `draft-skill` for the first and `tune-skill` for the second; both are arm-pz repos and install the same way as findable. To publish a multi-skill catalog index on your own domain (`/.well-known/agent-skills/index.json`), use [`publish-pipeline`](https://github.com/arm-pz/publish-pipeline); findable hands that job off rather than duplicating it.
 
 ## Install
 

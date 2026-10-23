@@ -65,4 +65,4 @@ When the project has siblings (a judging skill and a producing skill, say), give
 
 ## One surface to know about
 
-If the user hosts several skills on their own domain, a machine-readable discovery index at `/.well-known/agent-skills/index.json` lets installers resolve them with `npx skills add https://their-domain`. Publishing that index is its own job; point the user to the `skills-visibility` skill from Evil Martians or the current spec rather than reinventing it here, and verify the details before relying on them.
+If the user hosts several skills on their own domain, a machine-readable discovery index at `/.well-known/agent-skills/index.json` lets installers resolve them with `npx skills add https://their-domain`. Publishing that index is its own job; hand it to `publish-pipeline`, which builds the index, the per-skill pages and the sitemap from one manifest, rather than reinventing it here, and verify the current spec before relying on the details. When the listings already exist but disagree with the repos, that is drift, not discovery: hand it to `upstream-check`.

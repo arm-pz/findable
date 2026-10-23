@@ -23,6 +23,6 @@ Checks that findable activates for publisher-side requests and stays out of the 
 
 | Prompt | Expected routing |
 |---|---|
-| "Publish my skills so installers can find them from my domain." | findable for the listing and project pages, and a pointer to the discovery-index mechanism (`skills-visibility` or the current spec) for the index itself |
+| "Publish my skills so installers can find them from my domain." | findable for the listing and project pages, and a handoff to `publish-pipeline` for the index itself |
 | "Promote my repo on Reddit." | findable's distribution rules: disclose authorship, lead with a real example, no star requests |
 | "Improve my skill's description." | Ask which audience: agent triggering goes to tune-skill; search and directory copy stays in findable |
