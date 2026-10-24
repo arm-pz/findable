@@ -12,7 +12,7 @@ These are surfaces that turned up in research on agent-skill discovery. Treat th
 | MCP server directories | Glama, Smithery, the official MCP registry, PulseMCP | Required metadata, whether a listing needs a manifest or claim step |
 | Plugin marketplaces | The Claude Code community marketplace, the user's own marketplace repo | Contribution guidelines; whether entries point at a repo or are copied in |
 | Curated lists | awesome-agent-skills lists, awesome-mcp lists | The list's entry format, ordering rules and whether it wants a PR |
-| Machine-readable index on the user's own domain | `/.well-known/agent-skills/index.json`, read by `npx skills add https://their-domain` | Follow the current spec or the `skills-visibility` skill; verify digests and that the index parses |
+| Machine-readable index on the user's own domain | `/.well-known/agent-skills/index.json`, read by `npx skills add https://their-domain` | Hand to `publish-pipeline` (or follow the current spec); verify digests and that the index parses |
 | The user's own surfaces | Site page per project, profile README, a blog post, cross-links between sibling projects | Consistency of names, install commands and descriptions |
 
 Directories that display install counts or stars suggest early installs matter. Say that as a possibility, not a promise.
