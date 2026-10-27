@@ -2,7 +2,17 @@
 
 Goal: know where the project appears today, where comparable projects appear, and what the repo's own metadata says. Without a baseline you cannot tell whether anything you change worked.
 
-Contents: [1 Name searches](#1-name-searches) · [2 Task searches](#2-task-searches) · [3 Same-name projects](#3-same-name-projects) · [4 Repo metadata](#4-repo-metadata) · [5 Baseline table](#5-baseline-table) · [6 Reading the results](#6-reading-the-results)
+Contents: [0 Is it indexed at all?](#0-is-it-indexed-at-all) · [1 Name searches](#1-name-searches) · [2 Task searches](#2-task-searches) · [3 Same-name projects](#3-same-name-projects) · [4 Repo metadata](#4-repo-metadata) · [5 Baseline table](#5-baseline-table) · [6 Reading the results](#6-reading-the-results)
+
+## 0. Is it indexed at all?
+
+Before reading rankings, find out whether search engines have the site or page in their index. A page that is not indexed cannot rank for anything, its own name included, and no copy change fixes that.
+
+- Search the exact domain (`example.tech`) and the exact page title in quotes.
+- Try `site:example.tech`, but many search tools ignore operators and return general results: if none of the results are on the domain, treat the operator as unanswered, not as "zero pages indexed".
+- The only reliable answer is the search engine's own tool: Google Search Console URL Inspection and Bing Webmaster Tools URL Inspection. Ask the user to check, or to give you access. Say plainly when you could not verify indexation.
+
+If the domain does not appear even for its exact name, the gap is indexing, not ranking. The fix list comes before any copy work: verify the domain in Search Console and Bing Webmaster Tools, submit the sitemap in both, request indexing for the homepage, ping IndexNow where the host supports it, and get the first links pointing at the site (the repo's homepage field, the README, profiles). Then re-check in two to three weeks.
 
 ## 1. Name searches
 
@@ -12,6 +22,7 @@ Run these and note whether the project appears and what ranks above it:
 - `owner/project`
 - the project name plus "github"
 - the project name plus its category ("agent skill", "MCP server")
+- the name plus the domain's word, without the dot (`skillsmith tech` for skillsmith.tech, `acme app` for acme.app). People type the domain they half remember this way, and it is the query where same-name sites on other TLDs win by default.
 
 Record the top results, not just the project's own position.
 
@@ -32,6 +43,7 @@ For every other project sharing the name, note:
 - what it is and whether it overlaps in purpose (unrelated, adjacent, or direct competitor)
 - where it is listed (an extra directory listing is often what makes one same-name project outrank another)
 - how a reader could confuse the two
+- the domain it lives on. Same-name sites on other TLDs (`.com`, `.app`, `.dev`, `.co.in`) compete for the brand search itself, not only for the task.
 
 Anything adjacent or direct feeds the name decision in SKILL.md step 4. Even an unrelated same-name project needs a disambiguation line in the README and site FAQ.
 

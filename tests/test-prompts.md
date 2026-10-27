@@ -34,3 +34,8 @@ Each entry gives a prompt, the setup, what a good response contains, and what co
 
 ## 7. Limits script
 **Check:** `python scripts/check_listing.py --about "<351 characters>"` exits 1 and reports the overage; a valid kit exits 0.
+
+## 8. Brand search lands on other domains
+**Prompt:** "When I search 'acme tech' I get acme.com and acme.app, never my acme.tech." **Setup:** the site is live with a sitemap; search tools return nothing on the domain, even for `site:acme.tech`.
+**Good:** checks indexation first and says the operator result is not proof either way; asks for Search Console / Bing Webmaster URL Inspection; puts verification, sitemap submission and request-indexing ahead of copy; then drafts the homepage title qualifier, `WebSite` `alternateName` and a disambiguation line, asking the user to confirm the other sites are unrelated before stating it.
+**Fail:** rewrites copy while the domain is unindexed; reads an ignored `site:` result as "zero pages"; claims the other sites are unrelated without asking.
