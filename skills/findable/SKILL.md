@@ -10,8 +10,9 @@ description: >-
   visibility for a repo, skill or skill page, asks why a similar project shows up
   instead of theirs, or is about to publish a skill, plugin or MCP server. Not for
   finding repos or skills for a task, which is the reverse problem. Not for
-  authoring a new skill (use draft-skill) or tuning a SKILL.md description so an
-  agent triggers it better (use tune-skill).
+  authoring a new skill (use draft-skill), tuning a SKILL.md description so an
+  agent triggers it better (use tune-skill), or fixing a whole website's search
+  problems in its code (use seo-sweep).
 ---
 
 # Findable
